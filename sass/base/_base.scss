@@ -1,0 +1,17 @@
+.page {
+    font-size: 14px;
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    background: var(--second-txt-cl);
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-txt-cl);
+}

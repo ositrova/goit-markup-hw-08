@@ -1,0 +1,32 @@
+.outer {
+    padding-top: 0;
+}
+
+.outer__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    color: var(--main-txt-cl);
+    margin-bottom: 50px;
+}
+
+.outer__item {
+    position: relative;
+}
+
+.outer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    color: var(--second-txt-cl);
+    background-color: rgba(47, 48, 58, 0.8);
+}

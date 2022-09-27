@@ -1,0 +1,28 @@
+:root {
+    /* Fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* Text colors */
+    --main-txt-cl: #212121;
+    --light-txt-cl: #757575;
+    --accent-txt-cl: #2196f3;
+    --second-txt-cl: #ffffff;
+    --black-txt-cl: #000000;
+    --footer-link-txt-cl: rgba(255, 255, 255, 0.6);
+    --footer-txt-second: rgba(255, 255, 255, 0.1);
+
+    /* Background colors */
+    --accent-bg-cl: #2f303a;
+    --bg-cl: #f5f5f5;
+    --second-bg-cl: #f5f4fa;
+    --cl-box: #eeeeee;
+    --bg-activ-btn: #188ce8;
+    --bg-grip-cl: #afb1b8;
+
+    /* Others */
+    --items: 3;
+    --indent: 30px;
+
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
