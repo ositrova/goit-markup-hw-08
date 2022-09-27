@@ -1,15 +1,26 @@
 .client-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: calc(33/28);
     text-align: center;
     margin-bottom: 50px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+            line-height: calc(42/36);}
 }
 
 .client-list {
     display: flex;
     gap: 30px;
-    --items: 6;
+    --items: 2;
+
+@media screen and (min-width:768px) {
+    --items: 3;}
+
+    @media screen and (min-width:1200px) {
+            --items: 6; }
+
 }
 
 .client-item {

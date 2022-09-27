@@ -1,6 +1,11 @@
 .outer {
     padding-top: 0;
-}
+        @media screen and (max-width: 1200px) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+
 
 .outer__title {
     font-weight: 700;

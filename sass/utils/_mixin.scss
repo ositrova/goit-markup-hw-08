@@ -27,5 +27,5 @@
 }
 
 @mixin item($q, $g, $q-item) {
-    flex-basis: calc((100% - #{$q}*#{$g}) / # ($q-item));
+    flex-basis: calc((100% - #{$q}*#{$g}) / #{$q-item});
 }
