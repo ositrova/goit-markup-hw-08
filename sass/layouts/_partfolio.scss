@@ -50,18 +50,19 @@
 
 @media screen and (min-width:768px) {
         --items: 2;
-        
     }
 
     @media screen and (min-width:1200px) {
         --items: 3;
     }
+
+       
 }
 
 .partfolio-work {
     display: flex;
     flex-wrap: wrap;
-    
+
     
     transition: box-shadow var(--animation);
     &:hover {
@@ -75,7 +76,9 @@
                   @media screen and (min-width:1200px) {
                     max-width: 370px;
                   }
-     }
+    
+                }
+     
                 
 
 
@@ -130,15 +133,18 @@
     border-top: 0;
     padding: 20px 24px;
     max-width: 450px;
-
+    flex-grow: 1;
+    
     @media screen and(min-width:768px) {
             max-width: 354px;
         }
-    
+
         @media screen and (min-width:1200px) {
             max-width: 370px;
         }
 }
+
+
 
 .partfolio-work-item {
     margin-bottom: 4px;
@@ -147,6 +153,7 @@
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
+    
 }
 
 .partfolio-work-text {
@@ -157,6 +164,8 @@
 
 .partfolio-box-link {
     transition: box-shadow var(--animation);
+    display: flex;
+     flex-direction: column;
 }
 
 .partfolio-box-link:focus {
