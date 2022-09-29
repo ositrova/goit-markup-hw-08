@@ -17,7 +17,7 @@
 
   <body class="page">
     <!--Header (верхня лінія)-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="logo header-logo-link" href="./index.html" lang="en"><span class="logo-part">Web</span>Studio</a>
         <nav class="navigation">
@@ -32,9 +32,9 @@
           </ul>
         </nav>
 
-        <ul class="list nav-list">
+        <ul class="list nav-list nav-list-contact">
           <li class="nav-contact">
-            <a class="link header-link" href="mailto:info@devstudio.com">
+            <a class="link  header-link-contact" href="mailto:info@devstudio.com">
               <svg class="contacts-icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
@@ -42,7 +42,7 @@
             >
           </li>
           <li class="nav-contact">
-            <a class="link header-link" href="tel:+380961111111">
+            <a class="link  header-link-contact" href="tel:+380961111111">
               <svg class="contacts-icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -50,8 +50,13 @@
             >
           </li>
         </ul>
+        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg widht="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!--Section 1 (шапка)-->
@@ -338,7 +343,7 @@
       </section>
     </main>
     <!--Footer (подвал)-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-flex">
         <div>
           <a class="logo footer-logo" href="./index.html" lang="en"><span class="logo-part">Web</span><span class="footer-logo-part">Studio</span></a>
@@ -405,7 +410,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -462,6 +467,52 @@
       </div>
     </div>
 
+     <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li>
+            <a href="./index.html" class="link">Студія</a>
+          </li>
+          <li>
+            <a href="./partfolio.html" class="link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="link">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contact list">
+          <li class="mobile-contact-tel">
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contact-mail">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item"><a class="link" href="https://instagram.com">Instagram</a></li>
+          <li class="mobile-socials-item"><a class="link" href="https://twitter.com">Twitter</a></li>
+          <li class="mobile-socials-item"><a class="link" href="https://facebook.com">Facebook</a></li>
+          <li class="mobile-socials-item"><a class="link" href="https://linkedin.com">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

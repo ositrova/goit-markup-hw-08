@@ -5,7 +5,15 @@
     line-height: calc(31 / 26);
     text-decoration: none;
     color: var(--black-txt-cl);
-    margin-right: 93px;
+    
+            @media screen and (min-width: 768px) {
+                margin-right: 88px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                margin-right: 93px;
+            }
+        
 }
 
 .logo-part {
@@ -21,6 +29,11 @@
 .footer-logo {
     display: block;
     margin-bottom: 20px;
+    text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 80px;
+    }
+
 }
 
 .footer-logo-part {
