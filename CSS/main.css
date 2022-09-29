@@ -1273,7 +1273,11 @@ img {
   font-style: normal;
   text-decoration: none;
   line-height: 1.7142857143;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-contact {
+    text-align: center;
+  }
 }
 
 .footer-text {

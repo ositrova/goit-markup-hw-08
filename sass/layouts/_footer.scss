@@ -38,7 +38,11 @@ flex-direction: row;
         font-style: normal;
             text-decoration: none;
             line-height: calc(24 / 14);
-            text-align: center ;
+
+            @media screen and (max-width:1199px) {
+                text-align: center;
+            }
+            
     
 }
 
@@ -75,7 +79,7 @@ flex-direction: row;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;}
-        
+
     @media screen and (min-width:1200px) {
         margin-left: auto;
     }
