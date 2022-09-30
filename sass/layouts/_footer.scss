@@ -54,6 +54,12 @@ flex-direction: row;
 
 .footer-item {
     color: var(--footer-link-txt-cl);
+    
+    @media screen and (max-width:1199px) {
+        &:not(:last-child){
+            margin-bottom: 8px;
+        }
+    }
   
 }
 

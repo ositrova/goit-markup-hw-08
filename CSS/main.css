@@ -1329,6 +1329,11 @@ img {
 .footer-item {
   color: var(--footer-link-txt-cl);
 }
+@media screen and (max-width: 1199px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-container {
