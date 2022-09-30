@@ -1,131 +1,120 @@
 .footer {
-    background-color: var(--accent-bg-cl);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
+  background-color: var(--accent-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-flex {
-    
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-display: flex;
-flex-direction: row;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     text-align: center;
     justify-content: center;
-   
-}
+  }
 
-    @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-        gap: 70px;
-        align-items: baseline;
-    }
-    
+    gap: 70px;
+    align-items: baseline;
+  }
 }
 .footer-list {
-   
-    @media screen and (min-width:1200px) {
-        display: flex;
-            flex-direction: column;
-            gap: 9px;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
 }
 
 .footer-contact {
-   
-        font-style: normal;
-            text-decoration: none;
-            line-height: calc(24 / 14);
+  font-style: normal;
+  text-decoration: none;
+  line-height: calc(24 / 14);
 
-            @media screen and (max-width:1199px) {
-                text-align: center;
-            }
-            
-    
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-text {
-    margin-bottom: 9px;
-    line-height: calc(24 / 14);
-    color: var(--second-txt-cl);
+  margin-bottom: 9px;
+  line-height: calc(24 / 14);
+  color: var(--second-txt-cl);
 }
 
 .footer-item {
-    color: var(--footer-link-txt-cl);
-    
-    @media screen and (max-width:1199px) {
-        &:not(:last-child){
-            margin-bottom: 8px;
-        }
+  color: var(--footer-link-txt-cl);
+
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
     }
-  
+  }
 }
 
 .footer-container {
-    @media screen and (max-width:767px) {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
-        @media screen and (min-width: 768px) and (max-width: 1199px){
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            margin-left: 165px;}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 165px;
+  }
 
-    @media screen and (min-width:1200px) {
-        display: flex;
-            flex-direction: column;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-container:last-child {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: auto;
-        margin-right: auto;}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    @media screen and (min-width:1200px) {
-        margin-left: auto;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .footer-socials-text {
-    font-weight: 700;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--second-txt-cl);
-    margin-bottom: 20px;
-    text-align: center;
-    
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-txt-cl);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-socials-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .footer-socials-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-    color: var(--second-txt-cl);
-    background-color: var(--footer-txt-second);
-    transition: background-color var(--animation);
-    &:hover,
-        &:focus {
-            background-color: var(--accent-txt-cl);
-        }
+  color: var(--second-txt-cl);
+  background-color: var(--footer-txt-second);
+  transition: background-color var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-txt-cl);
+  }
 }
 
-
-
 .footer-socials-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
