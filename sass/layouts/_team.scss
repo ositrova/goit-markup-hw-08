@@ -4,6 +4,8 @@
 
 .team-list {
     --items: 1;
+    display: flex;
+        justify-content: center;
 
     @media screen and (min-width:768px) {
             --items: 2;

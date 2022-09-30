@@ -895,6 +895,40 @@ img {
 
 .hero {
   background-color: var(--accent-bg-cl);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header_sm-@1x.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header_sm-@1x.png");
+  background-image: -webkit-image-set(url("../images/hero/header_sm.webp") 1x);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/header_sm-@2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: url(../images/hero/header_md-@1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/header_md-@2x.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: url(../images/hero/header_lg-@1x.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/header_lg-@2x.png);
+  }
 }
 @media screen and (max-width: 1199.5px) {
   .hero {
@@ -1050,7 +1084,7 @@ img {
 .outer {
   padding-top: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   .outer {
     visibility: hidden;
     display: none;
@@ -1098,6 +1132,12 @@ img {
 
 .team-list {
   --items: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .team-list {

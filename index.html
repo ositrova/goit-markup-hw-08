@@ -119,15 +119,21 @@
           <h2 class="outer__title">Чим ми займаємося</h2>
           <ul class="list outer__list card-set">
             <li class="outer__item card-set-item">
-              <img src="./images/feature/img1.jpg" alt="learning to write code" width="370" />
+              <img srcset="./images/feature/img_1-@1x.jpg 1x, ./images/feature/img_1-@2x.jpg 2x"
+  src="./images/feature/img_1-@1x.jpg"
+              alt="learning to write code"  />
               <p class="outer__text">Десктопні додатки</p>
             </li>
             <li class="outer__item card-set-item">
-              <img src="./images/feature/img2.jpg" alt="learn how to configure the code on different devices" width="370" />
+              <img srcset="./images/feature/img_2-@1x.jpg 1x, ./images/feature/img_2-@2x.jpg 2x"
+  src="./images/feature/img_2-@1x.jpg" 
+  alt="learn how to configure the code on different devices"/>
               <p class="outer__text">Мобільні додатки</p>
             </li>
             <li class="outer__item card-set-item">
-              <img src="./images/feature/img3.jpg" alt="learn how to design a page" width="370" />
+              <img srcset="./images/feature/img_3-@1x.jpg 1x, ./images/feature/img_3-@2x.jpg 2x"
+  src="./images/feature/img_3-@1x.jpg"
+   alt="learn how to design a page"/>
               <p class="outer__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -140,7 +146,65 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="list team-list card-set">
             <li class="team-item card-set-item">
-              <img class="team-img" src="./images/team/team1.jpg" alt="Product Designer" width="270" />
+              <picture>
+  <!-- Desktop screen -->
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/img1_lg-@1x.webp 1x,
+    ./images/team/img1_lg-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/team/img1_lg-@1x.jpg 1x,
+      ./images/team/img1_lg-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  <source
+    media="(min-width: 768px)"
+    srcset="
+     ./images/team/img1_md-@1x.webp 1x,
+    ./images/team/img1_md-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/team/img1_md-@1x.jpg 1x,
+      ./images/team/img1_md-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img1_sm-@1x.webp 1x,
+    ./images/team/img1_sm-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img1_sm-@1x.jpg 1x,
+      ./images/team/img1_sm-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="team-img"
+    src="./images/team/img1_sm-@1x.jpg"
+    alt="Product Designer"
+    loading="lazy"
+  />
+</picture>
               <div class="team-box">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
@@ -177,7 +241,65 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img class="team-img" src="./images/team/team2.jpg" alt="Frontend Developer" width="270" />
+              <picture>
+  <!-- Desktop screen -->
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/img2_lg-@1x.webp 1x,
+    ./images/team/img2_lg-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/team/img2_lg-@1x.jpg 1x,
+      ./images/team/img2_lg-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  <source
+    media="(min-width: 768px)"
+    srcset="
+     ./images/team/img2_md-@1x.webp 1x,
+    ./images/team/img2_md-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/team/img2_md-@1x.jpg 1x,
+      ./images/team/img2_md-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img2_sm-@1x.webp 1x,
+    ./images/team/img2_sm-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img2_sm-@1x.jpg 1x,
+      ./images/team/img2_sm-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="team-img"
+    src="./images/team/img2_sm-@1x.jpg"
+    alt="Frontend Developer"
+    loading="lazy"
+  />
+</picture>
               <div class="team-box">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p class="team-text" lang="en">Frontend Developer</p>
@@ -214,7 +336,65 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img class="team-img" src="./images/team/team3.jpg" alt="Marketing" width="270" />
+              <picture>
+  <!-- Desktop screen -->
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/img3_lg-@1x.webp 1x,
+    ./images/team/img3_lg-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/team/img3_lg-@1x.jpg 1x,
+      ./images/team/img3_lg-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  <source
+    media="(min-width: 768px)"
+    srcset="
+     ./images/team/img3_md-@1x.webp 1x,
+    ./images/team/img3_md-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/team/img3_md-@1x.jpg 1x,
+      ./images/team/img3_md-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img3_sm-@1x.webp 1x,
+    ./images/team/img3_sm-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img3_sm-@1x.jpg 1x,
+      ./images/team/img3_sm-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="team-img"
+    src="./images/team/img3_sm-@1x.jpg"
+    alt="Marketing"
+    loading="lazy"
+  />
+</picture>
               <div class="team-box">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p class="team-text" lang="en">Marketing</p>
@@ -251,7 +431,65 @@
               </div>
             </li>
             <li class="team-item card-set-item">
-              <img class="team-img" src="./images/team/team4.jpg" alt="UI Designer" width="270" />
+              <picture>
+  <!-- Desktop screen -->
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+    ./images/team/img4_lg-@1x.webp 1x,
+    ./images/team/img4_lg-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 1200px)"
+    srcset="
+      ./images/team/img4_lg-@1x.jpg 1x,
+      ./images/team/img4_lg-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+  <source
+    media="(min-width: 768px)"
+    srcset="
+     ./images/team/img4_md-@1x.webp 1x,
+    ./images/team/img4_md-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="
+      ./images/team/img4_md-@1x.jpg 1x,
+      ./images/team/img4_md-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img4_sm-@1x.webp 1x,
+    ./images/team/img4_sm-@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    media="(max-width: 767px)"
+    srcset="
+      ./images/team/img4_sm-@1x.jpg 1x,
+      ./images/team/img4_sm-@1x.jpg 2x
+    "
+    type="image/jpg"
+  />
+  <img
+    class="team-img"
+    src="./images/team/img4_sm-@1x.jpg"
+    alt="UI Designer"
+    loading="lazy"
+  />
+</picture>
               <div class="team-box">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p class="team-text" lang="en">UI Designer</p>

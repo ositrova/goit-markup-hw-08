@@ -1,13 +1,42 @@
 .hero {
     background-color: var(--accent-bg-cl);
 
-    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.png);
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     max-width: 1600px;
-    //     margin-left: auto;
-    //     margin-right: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/header_sm-@1x.png');
+            background-image: -webkit-image-set(url('../images/hero/header_sm.webp') 1x);
+        
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/hero/header_sm-@2x.png);
+                }
+            
+                // Tablet images
+                @media screen and (min-width: 481px) {
+                    background-image: url(../images/hero/header_md-@1x.png);
+            
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/hero/header_md-@2x.png);
+                    }
+                }
+            
+                // Desktop images
+                @media screen and (min-width: 769px) {
+                    background-image: url(../images/hero/header_lg-@1x.png);
+            
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/hero/header_lg-@2x.png);
+                    }
+                }
 
 @media screen and (max-width: 1199.5px){
     padding-top: 118px;
