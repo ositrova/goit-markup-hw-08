@@ -106,7 +106,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-    transition: border-color var(--animation), fill 2000ms;
+    transition: border-color var(--animation),;
 }
 
 .register-form-input:focus {

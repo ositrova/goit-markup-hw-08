@@ -319,8 +319,9 @@
     <!--Footer (подвал)-->
     <footer class="footer">
       <div class="container footer-flex">
+        <div class="footer-box">
         <div>
-          <a class="logo footer-logo" href="./index.html" lang="en"><span class="logo-part">Web</span><span class="footer-logo-part">Studio</span></a>
+          <a class="footer-logo" href="./index.html" lang="en"><span class="logo-part">Web</span><span class="footer-logo-part">Studio</span></a>
 
           <address class="footer-contact">
             <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -368,21 +369,23 @@
             </li>
           </ul>
         </div>
-        <div class="footer-container">
+        </div>
+
+        <div class="footer-mailing-container">
           <p class="footer-mailing-text">Підпишіться на розсилку</p>
           <form class="footeer-mailing-contener">
             <label class="footer-label">
               <input class="footer-mailing-form" type="email" name="mail" placeholder="E-mail" />
             </label>
-            <button class="footer-mailing-btn" type="button">
-              <span>Підписатися</span>
+            <button class="footer-mailing-btn" type="submit">
+              Підписатися
               <svg class="footer-mailing-svg" width="24" height="24">
                 <use href="./images/icons.svg#mail-plane"></use>
               </svg>
             </button>
           </form>
         </div>
-      </div>
+      
     </footer>
 
     <!-- Mobile menu -->
@@ -400,7 +403,7 @@
         <li class="mobile-menu-item">
           <a href="./partfolio.html" class="link">Портфоліо</a>
         </li>
-        <li class="mobile-menu-item">
+        <li>
           <a href="#" class="link">Контакти</a>
         </li>
       </ul>
