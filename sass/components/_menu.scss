@@ -12,9 +12,15 @@
     cursor: pointer;
 
     margin-left: auto;
+    transition: fill var(--animation);
 
     @media screen and (min-width: 768px) {
             display: none;
+        }
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-txt-cl);
         }
 }
 
@@ -33,7 +39,7 @@
     background-color: var(--second-txt-cl);
 
     transform: translateX(100%);
-    transition: transform 400ms;
+    transition: transform var(--animation);
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -50,6 +56,7 @@
         line-height: calc(47/40);
         letter-spacing: 0.02em;
     margin-bottom: auto;
+    transition: fill var(--animation);
 
     &:hover,
         &:focus {
@@ -57,10 +64,14 @@
         }
 }
 
+.mobile-menu-item {
+    margin-bottom: 32px;
+}
+
 .mobile-contact{
 display: flex;
 flex-direction: column;
-gap: 32px;
+
 }
 
 .mobile-contact-tel{
@@ -69,9 +80,12 @@ gap: 32px;
         line-height: calc(40/34);    
         letter-spacing: 0.02em;
         color: var(--accent-txt-cl);
+        margin-bottom: 32px;
         @media screen and (max-width:393px){
             font-size: 25px;
         }
+
+        
 }
 
 .mobile-contact-mail {
@@ -80,6 +94,7 @@ gap: 32px;
         line-height: calc(28/24);
         letter-spacing: 0.02em;
         color: var(--light-txt-cl);
+        margin-bottom: 64px;
 }
 
 .menu-toggle {
@@ -103,16 +118,14 @@ gap: 32px;
 
 .mobile-socials {
     display: flex;
-    margin-top: 64px;
+    flex-wrap: wrap;
     gap: 10px;
     font-weight: 500;
         font-size: 18px;
         line-height: calc(22/18);    
         letter-spacing: 0.02em;
     color: var(--accent-txt-cl);
-    @media screen and (max-width:393px) {
-            font-size: 12px;
-        }
+    
 }
 
 .mobile-socials-item:not(:last-child)::after {

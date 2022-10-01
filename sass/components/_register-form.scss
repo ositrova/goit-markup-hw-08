@@ -56,7 +56,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: background-color var(--animation);
-    margin-bottom: 40px;
+   
 
     &:hover,
         &:focus {
@@ -106,7 +106,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
-    transition: border-color var(--animation);
+    transition: border-color var(--animation), fill 2000ms;
 }
 
 .register-form-input:focus {
@@ -116,11 +116,14 @@
 .register-form-icon {
     position: absolute;
     left: 12px;
-    bottom: 11px;
+    bottom: 11px;  
 }
 
+// .register-form-icons {
+// }
 .register-form-input:focus~.register-form-icon {
     fill: var(--accent-txt-cl);
+    transition: fill var(--animation);
 }
 
 .register-form-agreement {
@@ -129,6 +132,7 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    
 }
 
 .icon-checked {
